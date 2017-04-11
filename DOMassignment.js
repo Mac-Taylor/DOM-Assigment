@@ -1,16 +1,22 @@
 // JavaScript for DOMassignment.html
 
 let profiles = [
-    { name: , picture: ,},
-    { name: , picture: ,},
-    { name: , picture: ,},
+    { name:'Mary', picture: '',},
+    { name: 'Joe', picture: '',},
+    { name: 'Sue', picture: '',},
+    { name: 'Sue', picture: '',},
 ];
 
 function init() {
-    
-    console.log('this is working');
 
+    let parent = document.querySelector('main div');
 
+    for (let i = 0; i < profiles.length; i++) {
+
+        let item = document.createElement('li')
+
+        let pic
+    }
 
 }
 
