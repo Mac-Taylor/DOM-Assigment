@@ -14,18 +14,27 @@ function init() {
     for (let i = 0; i < profiles.length; i++) {
 
         let item = document.createElement('li');
+        item.classList.add(profiles[i].name);
+        item.classList.add('modifier');
 
         let ptag = document.createElement('p');
         ptag.textContent = profiles[i].name;
+        ptag.classList.add('text');
+
+        let btn1 = document.createElement('button');
+        btn1.textContent = 'Yes!';
+
+        let btn2 = document.createElement('button');
+        btn2.textContent = 'Nope.'
 
         let pic = document.createElement('img');
         pic.src = profiles[i].picture;
 
-        let btn = document.createElement('button');
-        
         parent.appendChild(item);
         item.appendChild(ptag);
         ptag.appendChild(pic);
+        ptag.appendChild(btn1);
+        ptag.appendChild(btn2);
 
     }
 
