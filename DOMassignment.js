@@ -7,6 +7,8 @@ let profiles = [
     { name:'John', picture: 'https://randomuser.me/api/portraits/men/90.jpg',},
 ];
 
+// Use stylesheet.CSSStyleRule() to create layout/design stuff.
+
 function init() {
 
     let parent = document.querySelector('main ul');
@@ -29,6 +31,14 @@ function init() {
 
         let pic = document.createElement('img');
         pic.src = profiles[i].picture;
+
+        btn1.addEventListener('click', function () {
+            console.log(profiles[i].name + ' has been "liked".')
+        });
+
+        btn2.addEventListener('click', function () {
+            console.log(profiles[i].name + ' has been "noped".')
+        })
 
         parent.appendChild(item);
         item.appendChild(ptag);
