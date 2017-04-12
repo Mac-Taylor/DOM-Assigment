@@ -8,6 +8,9 @@ let profiles = [
 ];
 
 // Use stylesheet.CSSStyleRule() to create layout/design stuff.
+// setInterval() we talked about in lecture, use for hard mode and mark
+// as code you got in lecture!!
+
 
 function init() {
 
@@ -38,7 +41,7 @@ function init() {
 
         btn2.addEventListener('click', function () {
             console.log(profiles[i].name + ' has been "noped".')
-        })
+        });
 
         parent.appendChild(item);
         item.appendChild(ptag);
